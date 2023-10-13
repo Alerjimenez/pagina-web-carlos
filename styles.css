@@ -85,6 +85,7 @@ section{
   height: 100vh;
   background-image: url(assets/lawyer2.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center top;
   background-size: 100% 110%;
   display: flex;
@@ -92,4 +93,83 @@ section{
   align-items: center;
 }
 
+ .contenido {
+  display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* .section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+
+.section__text__p2 {
+  font-size:  1.75rem;
+  
+}
+
+.section__text .title{
+  font-size: 3rem;
+  text-align: center;
+} */
+
+/* acerca */
+
+#trayectoria {
+  position: relative;
+}
+
+.trayectoria__containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  
+}
+.trayectoria__details__container {
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+.trayectoria__containers, .trayectoria__details__container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+
+.details__container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.section__container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic__container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+ 
+
+  
 
