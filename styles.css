@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }    
+   } 
+   
+   html{
+    scroll-behavior: smooth;
+   }
 
 body{  
     font-family: 'Roboto', sans-serif; 
@@ -79,13 +83,13 @@ body{
  
 /* Sections */
 
-section{
+.inicio{
   position: relative;
   width: 100%;
   height: 100vh;
   background-image: url(assets/lawyer2.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+ 
   background-position: center top;
   background-size: 100% 110%;
   display: flex;
@@ -100,7 +104,16 @@ section{
     margin: auto 0;
 }
 
-/* acerca */
+/* Trayectoria*/
+
+.contenido_trayectoria{
+  display:flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  background-color: #dad8d8;
+}
 
 
 

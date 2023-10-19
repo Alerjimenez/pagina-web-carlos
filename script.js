@@ -18,4 +18,14 @@ $(".nav").on("click","a",function(e){
     "left":itemPos.left + "px", 
     "width": activeWidth + "px"
   });
+
+  $(".nav a[href='#trayectoria']").click(function() {
+    // Redirige a la sección de trayectoria
+    window.location.href = "#trayectoria";
+  });
+  $(".nav a[href='#inicio']").click(function() {
+    // Redirige a la sección de trayectoria
+    window.location.href = "#inicio";
+  });
+  
 });
