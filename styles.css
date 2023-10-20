@@ -110,14 +110,15 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #dad8d8;
 }
 
 .imagen_trayectoria{
   display: flex;
   width: 800px;
   height: 600px;
-  margin-top: 5rem;
-  padding-top: 3rem;
+  margin-top: 3rem;
+  padding-top: 4rem;
   padding-left: 3rem;
   padding-bottom: 1rem;
 }
