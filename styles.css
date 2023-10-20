@@ -109,8 +109,7 @@ body{
 .contenido_trayectoria{
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #dad8d8;
+  background-color: rgb(236,236,236);
 }
 
 .imagen_trayectoria{
@@ -118,9 +117,9 @@ body{
   width: 800px;
   height: 600px;
   margin-top: 3rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-left: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .img_trayectoria{
