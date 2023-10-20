@@ -127,7 +127,8 @@ body{
 }
 
 .contenido_texto_trayectoria{
-  padding: 1.5rem;
+  padding: 3rem 2rem;
+  margin-right: 3rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
