@@ -1,42 +1,46 @@
-var nav = $('.nav');
-var selector = $('.nav').find('a').length;
-//var selector = $(".nav").find(".selector");
-var activeItem = nav.find('.active');
-var activeWidth = activeItem.innerWidth();
-$(".selector").css({
-  "left": activeItem.position.left + "px", 
-  "width": activeWidth + "px"
-});
-
-$(".nav").on("click","a",function(e){
-  e.preventDefault();
-  $('.nav a').removeClass("active");
-  $(this).addClass('active');
-  var activeWidth = $(this).innerWidth();
-  var itemPos = $(this).position();
-  $(".selector").css({
-    "left":itemPos.left + "px", 
-    "width": activeWidth + "px"
-  });
-
-  $(".nav a[href='#trayectoria']").click(function() {
-    // Redirige a la sección de trayectoria
-    window.location.href = "#trayectoria";
-  });
-  $(".nav a[href='#inicio']").click(function() {
-    // Redirige a la sección de trayectoria
-    window.location.href = "#inicio";
-  });
-
-  $(".nav a[href='#blog']").click(function() {
-    // Redirige a la sección de blog
-    window.location.href = "#blog";
-  }) 
-
-  $(".nav a[href='#contacto']").click(function() {
-    // Redirige a la sección de contacto
-    window.location.href = "#contacto";
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.documentElement.setAttribute('data-theme', "dark");
+} else {
+  document.documentElement.setAttribute('data-theme', "light");
+}
+window.matchMedia('(prefers-color-scheme: dark)')
+  .addEventListener('change', event => {
+    if (event.matches) {
+      //dark mode
+      document.documentElement.setAttribute('data-theme', "dark")
+    } else {
+      //light mode
+      document.documentElement.setAttribute('data-theme', "light");
+    }
   })
 
-  
+  //Obtener el boton toggle
+var toggleButton = document.getElementById("toggle-button");
+
+//Agregar un evento click al boton toggle
+toggleButton.addEventListener("click", function() {
+// Obtener el elemento body
+var body = document.querySelector("body");
+
+// Revisar si el elemento body tiene la clase "dark-mode"
+if (body.classList.contains("dark-mode")) {
+  // Remover la clase "dark-mode" del elemento body
+  body.classList.remove("dark-mode");
+  // Cambiar el texto del botón toggle
+  toggleButton.innerHTML = "Activar modo oscuro";
+} else {
+  // Agregar la clase "dark-mode" al elemento body
+  body.classList.add("dark-mode");
+  // Cambiar el texto del botón toggle
+  toggleButton.innerHTML = "Activar modo claro";
+}
 });
+
+
+
+function toggleMenu () {
+  const menu = document.querySelector(".menu__link");
+  const icon = document.querySelector(".hamburger__icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
