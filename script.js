@@ -27,5 +27,16 @@ $(".nav").on("click","a",function(e){
     // Redirige a la sección de trayectoria
     window.location.href = "#inicio";
   });
+
+  $(".nav a[href='#blog']").click(function() {
+    // Redirige a la sección de blog
+    window.location.href = "#blog";
+  }) 
+
+  $(".nav a[href='#contacto']").click(function() {
+    // Redirige a la sección de contacto
+    window.location.href = "#contacto";
+  })
+
   
 });

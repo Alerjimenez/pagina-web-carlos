@@ -29,7 +29,7 @@ body{
 .header .logo{
   font-size: 2em;
   font-weight: 700;
-  color: #7a7676;
+  color: #5a5757;
   text-decoration: none;
 }
 
@@ -109,30 +109,48 @@ body{
 .contenido_trayectoria{
   display: flex;
   align-items: center;
-  background-color: rgb(236,236,236);
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
 
 .imagen_trayectoria{
   display: flex;
   width: 800px;
-  height: 600px;
+  height: 600px;  
   margin-top: 3rem;
+  margin-bottom: 3rem;
   padding-top: 6rem;
   padding-left: 3rem;
-  padding-bottom: 4rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
 }
 
 .img_trayectoria{
   border-radius: 2rem;
-}
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  object-fit: cover;
+  }
 
 .contenido_texto_trayectoria{
   padding: 3rem 2rem;
   margin-right: 3rem;
   flex: 1;
-  background: white;
+  background: RGB(236 236 236);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
+  border-color: rgb(163, 163, 163);  
 }
+
+.texto_trayectoria {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: center;
+ color: rgb(53, 53, 53);
+ font-size: 1.2rem;
+}
+.contenido_trayectoria{
+  background-color: RGB(211 211 211)
+}
+
