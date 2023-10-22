@@ -191,10 +191,10 @@ section {
 /* PROFILE SECTION */
 
 #fondo{
+    
     background: url(assets/lawyer2.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0% 30%;  
 }
     
 #profile {
