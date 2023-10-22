@@ -199,7 +199,7 @@ section {
     
 #profile {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     gap: 5rem;
     height: 80vh;
 }
