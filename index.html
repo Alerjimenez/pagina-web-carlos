@@ -11,54 +11,56 @@
 </head>
 
 <body>
-    <nav id="desktop__nav">
-        <div class="logo"> Carlos Baralt Moran</div>
-        <div>
-            <ul class="nav__link">
-                <li> <a href="#about">Acerca</a></li>
-                <li> <a href="#experience">Servicios</a></li>
-                <li> <a href="#contact">Contacto</a></li>
-                <li> <a href="#blog">Blog</a></li>
+    <div id="fondo">
+        <nav id="desktop__nav">
+            <div class="logo"> Carlos Baralt Moran</div>
+            <div>
+                <ul class="nav__link">
+                    <li> <a href="#about">Acerca</a></li>
+                    <li> <a href="#experience">Servicios</a></li>
+                    <li> <a href="#contact">Contacto</a></li>
+                    <li> <a href="#blog">Blog</a></li>
 
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger__nav">
-        <div class="logo"> Alejandro Rosales</div>
-        <div class="hamburger__menu">
-            <div class="hamburger__icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+                </ul>
             </div>
-            <div class="menu__link">
-                <li><a href="#about" onclick="toggleMenu()">Acerca</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Servicios</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
-                <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+        </nav>
+        <nav id="hamburger__nav">
+            <div class="logo"> Carlos Baralt Moran</div>
+            <div class="hamburger__menu">
+                <div class="hamburger__icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu__link">
+                    <li><a href="#about" onclick="toggleMenu()">Acerca</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Servicios</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                    <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic__container">
+                <img src="" alt=" Alejandro Rosales profile picture">
             </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic__container">
-            <img src="" alt=" Alejandro Rosales profile picture">
-        </div>
-        <div class="section__text">
-            <!-- <p class="section__text__p1"> Abogado</p> -->
-            <h1 class="title"> Carlos Baralt</h1>
-            <p class="section__text__p2"> Abogado</p>
-            <div class="btn__container">
-                <!-- <button class="btn btn__color__2"
+            <div class="section__text">
+                <!-- <p class="section__text__p1"> Abogado</p> -->
+                <h1 class="title"> Carlos Baralt</h1>
+                <p class="section__text__p2"> Abogado</p>
+                <div class="btn__container">
+                    <!-- <button class="btn btn__color__2"
                     onclick="window.open('https://drive.google.com/file/d/15DN7Jd-v9aGPCASbgLXe-wndO2IOjsJP/view?usp=sharing')">
                     Download CV</button> -->
-                <button class="btn btn__color__1" onclick="location.href= './#contact'"> Contact</button>
-            </div>
-            <!-- <div id="social__container"><img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    <button class="btn btn__color__1" onclick="location.href= './#contact'"> Contact</button>
+                </div>
+                <!-- <div id="social__container"><img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
                     onclick="location.href='https://www.linkedin.com/in/alejandro-rosales-38974a103/'"></div>
         </div> -->
-    </section>
+        </section>
+    </div>
     <section id="about">
         <!-- <p class="section__text__p1"> Get to Know More</p> -->
-        <h1 class="title"> Acerca de mi</h1>
+        <h1 class="title"> Acerca</h1>
         <div class="section__container">
             <div class="section__pic__container">
                 <img src="./assets/data-center.webp" alt="Profile Picture" class="about-pic" />
@@ -88,8 +90,8 @@
         <img src="./assets/arrow.png" alt=" Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <!-- <p class="section__text__p1">Explore My</p> -->
+        <h1 class="title">Servicios</h1>
         <div class="experience__details__container">
             <div class="about__containers">
                 <div class="details__container">
@@ -193,8 +195,8 @@
         <h1 class="title">Contacto</h1>
         <div class="contact__info__upper__container">
             <div class="contact__info__container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:alerjimenez@gmail.com">baraltcarlos@gmail.com</a></p>
+                <img src="assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:baraltcarlos@gmail.com">baraltcarlos@gmail.com</a></p>
             </div>
             <div class="contact__info__container">
                 <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" /> -->
@@ -206,9 +208,9 @@
         <nav>
             <div class="nav__link__container">
                 <ul class="nav__link">
+                    <li><a href="#desktop__nav">Inicio</a></li>
                     <li><a href="#about">Acerca</a></li>
                     <li><a href="#experience">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
                     <li><a href="#blog">Blog</a></li>
                 </ul>
             </div>
