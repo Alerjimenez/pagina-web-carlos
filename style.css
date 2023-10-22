@@ -64,6 +64,7 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    font-weight: 400;
     }
 
 a {
@@ -82,6 +83,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    font-weight: 400;
 }
 
 .logo:hover {
@@ -194,7 +196,7 @@ section {
     
     background: url(assets/lawyer2.png);
     background-size: cover;
-    background-position: 0% 30%;  
+    background-position: 0% 15%;  
 }
     
 #profile {
